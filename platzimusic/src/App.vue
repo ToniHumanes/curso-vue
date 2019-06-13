@@ -12,6 +12,7 @@
         v-bind:artist="artist"
         v-bind:key="artist.mdid"
       ></artist>
+      
     </ul>
   </div>
 </template>
