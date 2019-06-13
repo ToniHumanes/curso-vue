@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso de VUE.JS</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- con v-if en false no renderiza el html, con v-show lo único que hace es añadir un display:none -->
+        <template v-if="mostrar">
+            <h1>{{ titulo | uppercase }}</h1>
+            <h2>{{ subtitulo | lowecase }}</h2>
+            <p>{{ tituloCapitalize | capitalize }}</p>
+            <a :href="url">Ir a {{pagina}}</a>
+        </template>
+        <!-- filtros: se añaden con | y se llama a un objeto filters que en su interior tiene un metodo llamado como el filtro -->
+    </div>
+
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            pagina: 'Amazon',
+            url: 'https:google.es/',
+            mostrar: true,
+            titulo: 'titulo dinamico',
+            subtitulo: 'SUBTitulo dinamico',
+            tituloCapitalize: 'este es el título del ejercicio propuesto'
+        },
+        filters: {
+            uppercase: function (str) {
+                return str.toUpperCase()
+            },
+            lowecase: function (str) {
+                return str.toLowerCase()
+            },
+            capitalize: function (str) {
+                var firstLetter = str.charAt(0).toUpperCase();
+                var paragraph = str.slice(1);
+                return firstLetter + paragraph;
+            }
+        }
+    })
+</script>
+
+</html>
