@@ -1,0 +1,10 @@
+
+body{
+    font-family: 'Roboto';
+}
+.container{
+    max-width: 764px;
+}
+
+@import '../../node_modules/bulma/bulma.sass';
+@import '../scss/login.scss';

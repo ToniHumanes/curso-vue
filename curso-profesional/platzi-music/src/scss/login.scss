@@ -1,0 +1,61 @@
+
+$yellow: #FF9300;
+$blueDark: #00BFD6;
+$blueLight: #A3ECF3;
+$black: #212121;
+
+.login{
+    padding: 2rem;
+    max-width: 50%;
+    margin: 2rem auto;
+    border:  1px solid $black;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form_title{
+    font-size: 25px;
+    color: $blueDark;
+    margin: 1rem 0rem 1rem;
+    font-weight: 700;
+}
+
+
+.form__label{
+    color: $yellow;
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 0rem;
+}
+
+.form__input{
+    border: none;
+    border-bottom: 1px solid $yellow;
+    padding:.1rem 0rem .3rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+    &:focus{
+        outline: none;
+    }
+}
+.form__button{
+    background-color: $blueDark;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    max-width: 176px;
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    margin-top: .5rem;
+    align-self: flex-end;
+}
