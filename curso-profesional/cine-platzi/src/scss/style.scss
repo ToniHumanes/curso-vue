@@ -1,0 +1,36 @@
+// styles atomic
+@import '../../node_modules/bulma/bulma.sass';
+
+body{
+    height: 100vh;
+}
+
+main{
+    padding: 1.5rem;
+}
+
+h1{
+    font-size: 30px;
+}
+
+
+#app{
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 'search search' 'header main';
+    grid-template-columns: 9rem 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.row-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+

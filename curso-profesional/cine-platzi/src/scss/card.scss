@@ -1,0 +1,34 @@
+
+.Vcard{
+    grid-area: card;
+    height: 100%;
+    border: none;
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Vcard__content{
+    position: absolute;
+    background: rgba(218, 27, 27, 0.77);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: .5rem;
+}
+
+.Vcard__title{
+    font-size: 23px;
+}
+
+.Vcard__paragraph{
+    line-height: 1.3;
+}
+
+// <div class="Vcard" id="Vcard">
+// <img src="../../assets/imagen-peli.jpg" alt="" class="Vcard__photo">
+// <h2 class="Vcard__title">La Pelicula</h2>
+// <p class="Vcard__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur officiis voluptatum quos saepe.</p>
+// </div>
